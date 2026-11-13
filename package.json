@@ -1,0 +1,60 @@
+{
+  "name": "pingboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable social profile API to practice write IDOR / mass assignment (CWE-639).",
+  "type": "module",
+  "license": "MIT",
+  "author": "iv0ks",
+  "packageManager": "pnpm@12.3.4",
+  "engines": {
+    "node": ">=26"
+  },
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/main.js",
+    "lint": "eslint . && prettier --check .",
+    "lint:fix": "eslint . --fix && prettier --write .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:seed": "tsx src/db/seed.ts",
+    "db:setup": "pnpm db:migrate && pnpm db:seed",
+    "prepare": "husky || true"
+  },
+  "dependencies": {
+    "@nestjs/common": "12.4.2",
+    "@nestjs/core": "12.4.2",
+    "@nestjs/platform-express": "12.4.2",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.15.1",
+    "cookie-parser": "1.4.7",
+    "drizzle-orm": "0.45.4",
+    "express-session": "1.19.0",
+    "postgres": "4.1.1",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
+    "@eslint/js": "10.0.1",
+    "@types/cookie-parser": "1.4.9",
+    "@types/express": "5.0.6",
+    "@types/express-session": "1.19.0",
+    "@types/node": "26.6.6",
+    "@types/supertest": "7.2.1",
+    "drizzle-kit": "0.31.11",
+    "eslint": "10.14.0",
+    "husky": "9.1.7",
+    "prettier": "3.10.1",
+    "supertest": "7.3.2",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.2",
+    "vitest": "5.1.0"
+  }
+}

@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+*.log
+.npm/
+.pnpm-store/
+
+# TypeScript / build caches
+*.tsbuildinfo
+
+# Drizzle temp output
+drizzle/.cache/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# The challenge flag is baked into the Docker image at build time and seeded
+# into the victim's profile. It must NOT live in the repo, or it would spoil
+# the lab.
+/flag.txt
+
+# Local secrets (postgres creds / session secret / Namecheap ACME).
+.env
