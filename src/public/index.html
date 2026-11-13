@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pingboard — your profile</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand"><span class="dot"></span> pingboard</div>
+      <div id="who" class="who"></div>
+    </header>
+
+    <main class="wrap">
+      <section id="login-card" class="card">
+        <h1>Sign in</h1>
+        <p class="muted">Use your pingboard account to manage your profile.</p>
+        <form id="login-form">
+          <label>Username <input name="username" value="alice" autocomplete="username" /></label>
+          <label
+            >Password
+            <input
+              name="password"
+              type="password"
+              value="password123"
+              autocomplete="current-password"
+          /></label>
+          <button type="submit">Sign in</button>
+          <p id="login-error" class="error"></p>
+        </form>
+      </section>
+
+      <section id="profile-card" class="card hidden">
+        <h1>Your profile</h1>
+        <form id="profile-form">
+          <label>Display name <input name="displayName" /></label>
+          <label>Bio <textarea name="bio" rows="2"></textarea></label>
+          <label>Location <input name="location" /></label>
+          <button type="submit">Save changes</button>
+          <p id="profile-msg" class="ok"></p>
+        </form>
+        <button id="logout" class="link">Sign out</button>
+      </section>
+    </main>
+
+    <footer class="foot">pingboard · educational AppSec lab · run locally only</footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
