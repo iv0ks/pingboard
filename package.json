@@ -1,6 +1,6 @@
 {
   "name": "pingboard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Intentionally vulnerable social profile API to practice write IDOR / mass assignment (CWE-639).",
   "type": "module",
