@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/iv0ks/pingboard/compare/v1.1.0...v1.1.1) (2026-11-16)
+
+
+### Bug Fixes
+
+* add missing traefik configuration ([200913d](https://github.com/iv0ks/pingboard/commit/200913d40d2e9ea408a8a6d4d887655e1267fec1))
+* pin typescript back to 6.0.3 ([851ae95](https://github.com/iv0ks/pingboard/commit/851ae954f4863bb5fedfcc2f3667a3f341d8929a))
+
 ## [1.1.0](https://github.com/iv0ks/pingboard/compare/v1.0.0...v1.1.0) (2026-11-13)
 
 
