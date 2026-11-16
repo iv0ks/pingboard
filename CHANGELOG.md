@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/iv0ks/pingboard/compare/v1.1.1...v1.1.2) (2026-11-16)
+
+
+### Bug Fixes
+
+* remove bundled npm from the runtime image ([a35283f](https://github.com/iv0ks/pingboard/commit/a35283fe0d3c8f2a62361b66b2d35e2f78a6494d))
+
 ## [1.1.1](https://github.com/iv0ks/pingboard/compare/v1.1.0...v1.1.1) (2026-11-16)
 
 
