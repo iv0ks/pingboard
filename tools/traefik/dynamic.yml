@@ -1,0 +1,17 @@
+http:
+  # Entry points define how Traefik listens for incoming requests.
+  routers:
+    # Pingboard router.
+    pingboard:
+      rule: 'Host(`pingboard.iv0ks.dev`)'
+      entryPoints:
+        - websecure
+      service: pingboard
+      tls: { certResolver: namecheap }
+
+  # Services define how Traefik forwards requests to backend servers.
+  services:
+    pingboard:
+      loadBalancer:
+        servers:
+          - url: 'http://host.docker.internal:3000/'
