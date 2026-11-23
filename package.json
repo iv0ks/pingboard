@@ -26,9 +26,9 @@
     "prepare": "husky || true"
   },
   "dependencies": {
-    "@nestjs/common": "12.4.2",
-    "@nestjs/core": "12.4.2",
-    "@nestjs/platform-express": "12.4.2",
+    "@nestjs/common": "12.5.0",
+    "@nestjs/core": "12.5.0",
+    "@nestjs/platform-express": "12.5.0",
     "class-transformer": "0.5.1",
     "class-validator": "0.15.1",
     "cookie-parser": "1.4.7",
@@ -48,7 +48,7 @@
     "@types/node": "26.6.6",
     "@types/supertest": "7.2.1",
     "drizzle-kit": "0.31.11",
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "husky": "9.1.7",
     "prettier": "3.10.1",
     "supertest": "7.3.2",
